@@ -190,7 +190,7 @@ footer hr {
 
 .gallery a img {
   -webkit-transform: translateZ(0); /* Fix chrome pixel shift */
-  border-radius: 3.7em;
+  border-radius: 3.55em;
   transition: all .2s ease;
   opacity: 1;
 }
@@ -272,7 +272,7 @@ footer hr {
 
 /* Spotlight */
 .spotlight {
-  background-color: #cbf1fe;
+  background-color: #FDFDFD;
   padding: 3em 1em;
   margin-top: 3em;
   margin-bottom: 3em;
@@ -289,20 +289,20 @@ footer hr {
 }
 
 .spotlight h1 {
-  color: #3b5f7a;
+  color: #666;
 }
 
 .spotlight p {
-  color: #3b5f7a;
+  color: #666;
   font-size: 1.1em;
 }
 
 .spotlight a {
   background-color: transparent;
-  border: 3px solid #3b5f7a;
+  border: 3px solid #666;
   padding: 7px 35px;
   border-radius: 3px;
-  color: #3b5f7a;
+  color: #666;
   font-size: 1.1em;
   opacity: .8;
   margin-bottom: 10px;
