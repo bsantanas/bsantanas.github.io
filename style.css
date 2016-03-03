@@ -190,6 +190,7 @@ footer hr {
 
 .gallery a img {
   -webkit-transform: translateZ(0); /* Fix chrome pixel shift */
+  border-radius: 3.7em;
   transition: opacity .2s ease;
   opacity: 1;
 }
