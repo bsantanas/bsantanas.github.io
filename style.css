@@ -273,7 +273,7 @@ footer hr {
 /* Spotlight */
 .spotlight {
   /*background-color: #F9F9F9;*/
-  background: linear-gradient(to bottom right, #FFF,#DDDDDD,#FFF); /* Standard syntax */
+  background: linear-gradient(to right, #FFF,#FAFAFA,#FFF); /* Standard syntax */
   padding: 3em 1em;
   margin-top: 3em;
   margin-bottom: 3em;
