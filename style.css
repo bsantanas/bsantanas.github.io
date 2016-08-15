@@ -78,6 +78,7 @@ header h2 {
 header div {
   margin: auto;
   width: 16em;
+  margin-top: 50px;
 }
 
 /*header p {
