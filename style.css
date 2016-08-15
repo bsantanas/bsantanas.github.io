@@ -3,15 +3,15 @@
 }
  
 body {
-  font: 100% Lato, sans-serif;
+  font: 100% sans-serif;
   margin: 0em;
   background-color: #fff;
   color: #666;
 }
 
 h1, h2, h3 {
-  font-family: Lato, sans-serif;
-  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 a {
@@ -25,14 +25,13 @@ a:hover {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.8;
   margin-top: 0em;
-  font-weight: 500;
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 hr {
@@ -43,8 +42,8 @@ hr {
 }
 
 header {
-  background-color: #999;
-  background-image: url(img/background.jpg);
+  /*background-color: #999;*/
+  /*background-image: url(img/background.jpg);*/
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -52,37 +51,36 @@ header {
   -o-background-size: cover;
   background-size: cover;
   margin-bottom: 4em;
-  text-align: center;
-  height: 500px;
-  -webkit-animation: fadein 0.8s;
-  animation: fadein 0.5s;
-}
-
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  text-align: left;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 4em;
+  /*height: 500px;*/
+ 
 }
 
 header h1 {
-  color: white;
+  color: #676767;
   font-size: 2.5em;
   margin: 0;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   opacity: 1;
-  text-shadow: 0 3px 0 rgba(0,0,0, 0.5);
-  position: relative;
-  top: 370px;
-  font-weight: 700;
+  /*text-shadow: 0 3px 0 rgba(0,0,0, 0.5);*/
+  top: 100px;
+  font-weight: 100;
 }
 
-header p {
+header h2 {
+  color: #797979;
+  font-size: 1.3em;
+}
+
+header div {
+  margin: auto;
+  width: 16em;
+}
+
+/*header p {
   color: #fff;
   font-size: 1.1em;
   padding-bottom: 1.3em;
@@ -90,7 +88,7 @@ header p {
   opacity: .9;
   position: relative;
   top: 360px;
-}
+}*/
 
 section h1 {
   font-size: 1.8em;
@@ -126,12 +124,28 @@ footer hr {
   
   header h1 {
     font-size: 3.2em;
-    top: 540px;
+  }
+
+  header h2 {
+    font-size: 1.8em
   }
   
+  header div {
+    float: right;
+    width: 25%;
+    margin-right: 6em;
+    margin-top: 100px;
+  }
+
   header p {
     top: 530px;
     font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 70em) {
+  header {
+    height: 900px;
   }
 }
 
@@ -204,14 +218,12 @@ footer hr {
 
 .gallery a img {
   -webkit-transform: translateZ(0); /* Fix chrome pixel shift */
-  border-radius: 3.55em;
-  transition: all .2s ease;
+  transition: opacity .2s ease;
   opacity: 1;
 }
 
 .gallery a img:hover {
   opacity: .8;
-  transform: scale(1.1);
 }
 
 @media screen and (min-width: 40em) {
@@ -286,8 +298,7 @@ footer hr {
 
 /* Spotlight */
 .spotlight {
-  /*background-color: #F9F9F9;*/
-  background: linear-gradient(to right, #FFF,#FAFAFA,#FFF); /* Standard syntax */
+  background-color: #f3e2d8;
   padding: 3em 1em;
   margin-top: 3em;
   margin-bottom: 3em;
@@ -295,7 +306,6 @@ footer hr {
 }
 
 .spotlight img {
-  border-radius: 25px;
   width: 60%;
   max-width: 250px;
   margin-left: auto;
@@ -304,21 +314,20 @@ footer hr {
 }
 
 .spotlight h1 {
-  color: #666;
+  color: #e4382c;
 }
 
 .spotlight p {
-  color: #666;
+  color: #6d5e53;
   font-size: 1.1em;
 }
 
 .spotlight a {
   background-color: transparent;
-  border: 2px solid #666;
-  padding: 7px 25px;
+  border: 3px solid #e4382c;
+  padding: 7px 35px;
   border-radius: 3px;
-  color: #F1F1F1;
-  background-color: #666;
+  color: #e4382c;
   font-size: 1.1em;
   opacity: .8;
   margin-bottom: 10px;
