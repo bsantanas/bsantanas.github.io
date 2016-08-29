@@ -3,15 +3,20 @@
 }
  
 body {
-  font: 100% sans-serif;
+  font-family: 'Open Sans', sans-serif;;
+  /*font: 100% sans-serif;*/
   margin: 0em;
   background-color: #fff;
   color: #666;
+  letter-spacing: 0.3px;
+}
+
+body h2 {
+  color: #797979;
 }
 
 h1, h2, h3 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 a {
@@ -61,6 +66,7 @@ header {
 }
 
 header h1 {
+  font-family: 'Lato', sans-serif;
   color: #598fe1;
   font-size: 2.5em;
   margin: 0;
@@ -68,11 +74,13 @@ header h1 {
   opacity: 1;
   /*text-shadow: 0 3px 0 rgba(0,0,0, 0.5);*/
   top: 100px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 header h2 {
-  color: #272727;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #828282;
   font-size: 1.3em;
 }
 
@@ -96,6 +104,11 @@ section h1 {
   font-size: 1.8em;
   line-height: 1em;
   margin-bottom: .6em;
+  margin-top: 0px;
+}
+
+section > p {
+  text-align: left;
 }
 
 /* Same font-size and line-height as p element */
@@ -106,6 +119,7 @@ section ul li, section ol li {
 }
 
 footer {
+  font-size: small;
   margin-bottom: 1em;
   color: #888;
 }
@@ -121,8 +135,8 @@ footer hr {
 
 @media screen and (min-width: 50em) {
   header {
-    height: 700px;
-    text-align: left;
+    height: 400px;
+    /*text-align: left;*/
   }
   
   header h1 {
@@ -148,7 +162,7 @@ footer hr {
 
 @media screen and (min-width: 70em) {
   header {
-    height: 900px;
+    height: 400px;
   }
 }
 
@@ -264,7 +278,7 @@ footer hr {
 
 /* Education Block */
 .education {
-  font-family: "Lato", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
   margin-bottom: 0;
   text-align: center;
@@ -303,11 +317,11 @@ footer hr {
 
 /* Spotlight */
 .spotlight {
-  background-color: #fbfbfb;
+  background-color: #fefdfd;
   padding: 3em 1em;
   margin-top: 3em;
   margin-bottom: 3em;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .spotlight img {
@@ -330,7 +344,7 @@ footer hr {
 
 .spotlight a {
   background-color: transparent;
-  border: 3px solid #5e94de;
+  border: 2px solid #5e94de;
   padding: 7px 35px;
   border-radius: 3px;
   color: #5e94de;
@@ -347,7 +361,7 @@ footer hr {
 @media screen and (min-width: 40em) {
   .spotlight {
     padding: 6em;
-    text-align: left;
+    /*text-align: left;*/
   }
   
   .spotlight h1, .spotlight p {
