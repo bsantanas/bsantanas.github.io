@@ -86,8 +86,6 @@ header h2 {
 
 header div {
   margin: auto;
-  width: 16em;
-  margin-top: 50px;
 }
 
 /*header p {
@@ -108,7 +106,7 @@ section h1 {
 }
 
 section > p {
-  text-align: left;
+  text-align: center;
 }
 
 /* Same font-size and line-height as p element */
@@ -133,9 +131,18 @@ footer hr {
   text-align: center;
 }
 
+@media screen and (min-width: 40em) {
+  header div {
+    /*float: right;*/
+    /*width: 700px;*/
+    /*margin-right: 6em;*/
+    margin-top: 50px;
+  }
+}
+
 @media screen and (min-width: 50em) {
   header {
-    height: 400px;
+    /*height: 400px;*/
     /*text-align: left;*/
   }
   
@@ -146,23 +153,19 @@ footer hr {
   header h2 {
     font-size: 1.8em
   }
-  
-  header div {
-    float: right;
-    width: 25%;
-    margin-right: 6em;
-    margin-top: 100px;
-  }
 
   header p {
     top: 530px;
-    font-size: 1.5em;
+  }
+
+  header div {
+    width: 700px;
   }
 }
 
 @media screen and (min-width: 70em) {
   header {
-    height: 400px;
+    /*height: 400px;*/
   }
 }
 
@@ -178,8 +181,8 @@ footer hr {
 
 .row {
   clear: both;
-  margin-right: -1%;
-  margin-left:  -1%;
+  /*margin-right: -1%;
+  margin-left:  -1%;*/
   
 }
 
@@ -261,7 +264,7 @@ footer hr {
   margin-bottom: 0;
 }
 
-.experience h2, .experience p {
+.experience h2, .experience p, .experience h3 {
   text-align: center;
 }
 
@@ -331,10 +334,12 @@ footer hr {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  margin-bottom: 30px;
 }
 
 .spotlight h1 {
   color: #5e94de;
+  text-align: center;
 }
 
 .spotlight p {
@@ -342,10 +347,14 @@ footer hr {
   font-size: 1.1em;
 }
 
-.spotlight a {
+.spotlight div {
+  text-align: center;
+}
+
+.spotlight .button {
   background-color: transparent;
   border: 2px solid #5e94de;
-  padding: 7px 35px;
+  padding: 7px 30px;
   border-radius: 3px;
   color: #5e94de;
   font-size: 1.1em;
@@ -368,5 +377,24 @@ footer hr {
     text-align: left;
   }
   
+  .spotlight div {
+    text-align: left;
+  }
+}
+
+/* Skills */
+.skills h2 {
+  text-align: center;
+}
+
+.skills p {
+  text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+  .skills p {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
 }
 
