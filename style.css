@@ -246,6 +246,10 @@ footer hr {
   opacity: .8;
 }
 
+.grid-2.cornered {
+  border-radius: 50%;
+}
+
 @media screen and (min-width: 40em) {
   .gallery .grid-2 {
     width: 33.3333333%;
